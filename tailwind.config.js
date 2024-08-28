@@ -24,6 +24,7 @@ export default {
                     'dark-desaturated-cyan': 'hsl(167, 40%, 24%)',
                     'dark-blue': 'hsl(198, 62%, 26%)',
                     'dark-moderate-cyan': 'hsl(168, 34%, 41%)',
+                    'light-moderate-cyan': '#90D4C5',
                     'very-dark-desaturated-blue': 'hsl(212, 27%, 19%)',
                     'very-dark-grayish-blue': 'hsl(213, 9%, 39%)',
                     'dark-grayish-blue': 'hsl(232, 10%, 55%)',
