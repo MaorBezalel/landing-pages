@@ -3,13 +3,12 @@ import { usePageConfig } from '@/hooks';
 import { ROUTES } from '@/constants';
 import { useState } from 'react';
 
-import sunnysideLogo from '@/assets/sunnyside/images/logo.svg';
 import arrowDownIcon from '@/assets/sunnyside/images/icon-arrow-down.svg';
 
 import emilyReviewProfileImage from '@/assets/sunnyside/images/image-emily.jpg';
 import jennieReviewProfileImage from '@/assets/sunnyside/images/image-jennie.jpg';
 import thomasReviewProfileImage from '@/assets/sunnyside/images/image-thomas.jpg';
-import { Logo } from './components/Logo.component';
+import { Logo } from '@/pages/sunnyside/components/ui/Logo.ui';
 
 import { IconFacebook, IconInstagram, IconPinterest, IconTwitter } from '@/pages/sunnyside/components/icons';
 
@@ -22,7 +21,7 @@ export default function SunnysidePage() {
     return (
         <div className="grid min-h-[100dvh] grid-rows-[auto_1fr_auto]">
             <header
-                className="flex h-screen w-full flex-col gap-24 bg-[url('@/assets/sunnyside/images/desktop/image-header.jpg')] bg-cover bg-center bg-no-repeat
+                className="flex h-screen w-full flex-col gap-[10%] bg-[url('@/assets/sunnyside/images/desktop/image-header.jpg')] bg-cover bg-center bg-no-repeat
                 mobile-lg:bg-[url('@/assets/sunnyside/images/mobile/image-header.jpg')]"
             >
                 <nav
@@ -138,9 +137,9 @@ export default function SunnysidePage() {
                     <div
                         className="order-[0] flex h-[600px] w-full flex-col justify-center gap-10 bg-sunnyside-white px-40
                         desktop-md:px-32
-                        desktop-sm:px-24
-                        tablet-lg:px-16
-                        tablet-md:h-[400px] tablet-md:gap-5
+                        desktop-sm:h-[500px] desktop-sm:px-24
+                        tablet-lg:h-[400px] tablet-lg:px-16 
+                        tablet-md:gap-5
                         tablet-sm:order-1 tablet-sm:items-center tablet-sm:px-16 tablet-sm:text-center
                         mobile-lg:gap-6 mobile-lg:px-8"
                     >
@@ -171,22 +170,30 @@ export default function SunnysidePage() {
                             Learn More
                         </Link>
                     </div>
-                    <div className="order-1 h-[600px] w-full bg-[url('@/assets/sunnyside/images/desktop/image-transform.jpg')] bg-cover bg-center bg-no-repeat tablet-md:h-[400px] tablet-sm:order-[0]" />
-                    <div className="order-2 h-[600px] w-full bg-[url('@/assets/sunnyside/images/desktop/image-stand-out.jpg')] bg-cover bg-center bg-no-repeat tablet-md:h-[400px]" />
+                    <div
+                        className="order-1 h-[600px] w-full bg-[url('@/assets/sunnyside/images/desktop/image-transform.jpg')] bg-cover bg-center bg-no-repeat 
+                        desktop-sm:h-[500px]
+                        tablet-lg:h-[400px] 
+                        tablet-sm:order-[0]"
+                    />
+                    <div
+                        className="order-2 h-[600px] w-full bg-[url('@/assets/sunnyside/images/desktop/image-stand-out.jpg')] bg-cover bg-center bg-no-repeat 
+                        desktop-sm:h-[500px]
+                        tablet-lg:h-[400px]"
+                    />
                     <div
                         className="order-3 flex h-[600px] w-full flex-col justify-center gap-10 bg-sunnyside-white px-40
                         desktop-md:px-32
-                        desktop-sm:px-24
-                        tablet-lg:px-16
-                        tablet-md:h-[400px] tablet-md:gap-5
+                        desktop-sm:h-[500px] desktop-sm:px-24
+                        tablet-lg:h-[400px] tablet-lg:px-16 
+                        tablet-md:gap-5
                         tablet-sm:items-center tablet-sm:px-16 tablet-sm:text-center
                         mobile-lg:gap-6 mobile-lg:px-8"
                     >
                         <h2
                             className="font-fraunces text-5xl font-[900] text-sunnyside-very-dark-desaturated-blue
                             desktop-lg:text-5xl
-                            desktop-md:text-3xl
-                            tablet-md:text-2xl
+                            desktop-md:text-3xl tablet-md:text-2xl
                             tablet-sm:text-4xl"
                         >
                             Stand out to the right audience
@@ -210,9 +217,9 @@ export default function SunnysidePage() {
                         </Link>
                     </div>
                     <div
-                        className="order-4 flex h-[600px] w-full flex-col items-center justify-end gap-10 bg-[url('@/assets/sunnyside/images/desktop/image-graphic-design.jpg')] bg-cover bg-center bg-no-repeat py-12 text-center
-                        tablet-md:h-[400px] tablet-md:gap-4 tablet-md:pt-0
-                        tablet-sm:pb-6"
+                        className="order-4 flex h-[600px] w-full flex-col items-center justify-end gap-10 bg-[url('@/assets/sunnyside/images/image-graphic-design.jpg')] bg-cover bg-center bg-no-repeat py-12 text-center
+                        desktop-sm:h-[500px]
+                        tablet-lg:h-[400px] tablet-lg:gap-4 tablet-lg:py-6"
                     >
                         <h2
                             className="font-fraunces text-5xl font-[900] text-sunnyside-dark-desaturated-cyan
@@ -222,11 +229,11 @@ export default function SunnysidePage() {
                         >
                             Graphic Design
                         </h2>
-                        {/* prettier-ignore */}
-                        <pre 
+                        <pre
                             className="font-barlow text-xl text-sunnyside-dark-desaturated-cyan
                             desktop-md:text-lg
-                            tablet-md:text-base"
+                            tablet-md:text-[0.9rem]
+                            tablet-sm:text-base"
                         >
                             Great design makes you memorable. We deliver{'\n'}
                             artwork that underscores your brand message{'\n'}
@@ -234,10 +241,9 @@ export default function SunnysidePage() {
                         </pre>
                     </div>
                     <div
-                        className="order-5 flex h-[600px] w-full flex-col items-center justify-end gap-10 bg-[url('@/assets/sunnyside/images/desktop/image-photography.jpg')] bg-cover bg-center bg-no-repeat py-12 text-center
-                        tablet-md:h-[400px]
-                        tablet-md:gap-4 tablet-md:pt-0
-                        tablet-sm:pb-6"
+                        className="order-5 flex h-[600px] w-full flex-col items-center justify-end gap-10 bg-[url('@/assets/sunnyside/images/image-photography.jpg')] bg-cover bg-center bg-no-repeat py-12 text-center
+                        desktop-sm:h-[500px]
+                        tablet-lg:h-[400px] tablet-lg:gap-4 tablet-lg:py-6"
                     >
                         <h2
                             className="font-fraunces text-5xl font-[900] text-sunnyside-dark-blue
@@ -250,7 +256,8 @@ export default function SunnysidePage() {
                         <pre
                             className="font-barlow text-xl text-sunnyside-dark-blue
                             desktop-md:text-lg
-                            tablet-md:text-base"
+                            tablet-md:text-[0.9rem]
+                            tablet-sm:text-base"
                         >
                             Increase your credibility by getting the most{'\n'}
                             stunning, high-quality photos that improve your{'\n'}
@@ -472,7 +479,7 @@ export default function SunnysidePage() {
                 </section>
             </main>
 
-            {/* <footer className="flex flex-col items-center justify-center gap-20 bg-sunnyside-light-moderate-cyan p-20 text-center">
+            <footer className="flex flex-col items-center justify-center gap-20 bg-sunnyside-light-moderate-cyan py-20 text-center">
                 <nav
                     className="flex flex-col items-center gap-10"
                     aria-label="Site"
@@ -534,7 +541,7 @@ export default function SunnysidePage() {
                         </li>
                     </ul>
                 </nav>
-            </footer> */}
+            </footer>
         </div>
     );
 }
