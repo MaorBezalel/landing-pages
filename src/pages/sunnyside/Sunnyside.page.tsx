@@ -436,15 +436,40 @@ export default function SunnysidePage() {
                     </div>
                 </section>
 
-                {/* <section
-                    id="images"
-                    className="grid w-full grid-cols-[repeat(4,1fr)] gap-0"
+                <section
+                    id="image-gallery"
+                    className="grid w-full grid-cols-[repeat(4,1fr)] gap-0 
+                    tablet-sm:grid-cols-2 tablet-sm:grid-rows-2"
                 >
-                    <div className="h-[600px] bg-[url('@/assets/sunnyside/images/desktop/image-gallery-milkbottles.jpg')] bg-cover bg-center bg-no-repeat" />
-                    <div className="h-[600px] bg-[url('@/assets/sunnyside/images/desktop/image-gallery-orange.jpg')] bg-cover bg-center bg-no-repeat" />
-                    <div className="h-[600px] bg-[url('@/assets/sunnyside/images/desktop/image-gallery-cone.jpg')] bg-cover bg-center bg-no-repeat" />
-                    <div className="h-[600px] bg-[url('@/assets/sunnyside/images/desktop/image-gallery-sugarcubes.jpg')] bg-cover bg-center bg-no-repeat" />
-                </section> */}
+                    <div
+                        className="h-[600px] bg-[url('@/assets/sunnyside/images/desktop/image-gallery-milkbottles.jpg')] bg-cover bg-center bg-no-repeat
+                        tablet-lg:h-[400px]
+                        tablet-md:h-[300px] tablet-md:bg-[url('@/assets/sunnyside/images/mobile/image-gallery-milkbottles.jpg')]
+                        tablet-sm:h-[250px]
+                        mobile-md:h-[200px]"
+                    />
+                    <div
+                        className="h-[600px] bg-[url('@/assets/sunnyside/images/desktop/image-gallery-orange.jpg')] bg-cover bg-center bg-no-repeat
+                        tablet-lg:h-[400px]
+                        tablet-md:h-[300px] tablet-md:bg-[url('@/assets/sunnyside/images/mobile/image-gallery-orange.jpg')]
+                        tablet-sm:h-[250px]
+                        mobile-md:h-[200px]"
+                    />
+                    <div
+                        className="h-[600px] bg-[url('@/assets/sunnyside/images/desktop/image-gallery-cone.jpg')] bg-cover bg-center bg-no-repeat
+                        tablet-lg:h-[400px]
+                        tablet-md:h-[300px] tablet-md:bg-[url('@/assets/sunnyside/images/mobile/image-gallery-cone.jpg')]
+                        tablet-sm:h-[250px]
+                        mobile-md:h-[200px]"
+                    />
+                    <div
+                        className="h-[600px] bg-[url('@/assets/sunnyside/images/desktop/image-gallery-sugar-cubes.jpg')] bg-cover bg-center bg-no-repeat
+                        tablet-lg:h-[400px]
+                        tablet-md:h-[300px] tablet-md:bg-[url('@/assets/sunnyside/images/mobile/image-gallery-sugar-cubes.jpg')]
+                        tablet-sm:h-[250px]
+                        mobile-md:h-[200px]"
+                    />
+                </section>
             </main>
 
             {/* <footer className="flex flex-col items-center justify-center gap-20 bg-sunnyside-light-moderate-cyan p-20 text-center">
