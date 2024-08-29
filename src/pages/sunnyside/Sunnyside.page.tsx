@@ -140,21 +140,24 @@ export default function SunnysidePage() {
                         desktop-md:px-32
                         desktop-sm:px-24
                         tablet-lg:px-16
-                        tablet-md:h-[400px] tablet-md:px-8
-                        tablet-sm:order-1"
+                        tablet-md:h-[400px] tablet-md:gap-5
+                        tablet-sm:order-1 tablet-sm:items-center tablet-sm:px-16 tablet-sm:text-center
+                        mobile-lg:gap-6 mobile-lg:px-8"
                     >
                         <h2
                             className="font-fraunces text-5xl font-[900] text-sunnyside-very-dark-desaturated-blue
                             desktop-lg:text-5xl
                             desktop-md:text-3xl
-                            tablet-md:text-2xl"
+                            tablet-md:text-2xl
+                            tablet-sm:text-4xl"
                         >
                             Transform your brand
                         </h2>
                         <p
                             className="text-xl text-sunnyside-dark-grayish-blue
                             desktop-md:text-lg
-                            tablet-md:text-base"
+                            tablet-md:text-base
+                            tablet-sm:text-lg"
                         >
                             We are a full-service creative agency specializing in helping brands grow fast. Engage your
                             clients through compelling visuals that do most of the marketing for you.
@@ -162,7 +165,8 @@ export default function SunnysidePage() {
                         <Link
                             to={ROUTES.SUNNY_SIDE}
                             className="font-fraunces font-extrabold uppercase text-sunnyside-very-dark-desaturated-blue underline decoration-sunnyside-yellow/30 decoration-8 underline-offset-1 transition-colors duration-200 hover:decoration-sunnyside-yellow
-                            tablet-md:text-base"
+                            tablet-md:text-base
+                            tablet-sm:text-lg"
                         >
                             Learn More
                         </Link>
@@ -174,20 +178,24 @@ export default function SunnysidePage() {
                         desktop-md:px-32
                         desktop-sm:px-24
                         tablet-lg:px-16
-                        tablet-md:h-[400px] tablet-md:px-8"
+                        tablet-md:h-[400px] tablet-md:gap-5
+                        tablet-sm:items-center tablet-sm:px-16 tablet-sm:text-center
+                        mobile-lg:gap-6 mobile-lg:px-8"
                     >
                         <h2
                             className="font-fraunces text-5xl font-[900] text-sunnyside-very-dark-desaturated-blue
                             desktop-lg:text-5xl
                             desktop-md:text-3xl
-                            tablet-md:text-2xl"
+                            tablet-md:text-2xl
+                            tablet-sm:text-4xl"
                         >
                             Stand out to the right audience
                         </h2>
                         <p
                             className="text-xl text-sunnyside-dark-grayish-blue
                             desktop-md:text-lg
-                            tablet-md:text-base"
+                            tablet-md:text-base
+                            tablet-sm:text-lg"
                         >
                             Using a collaborative formula of designers, researchers, photographers, videographers, and
                             copywriters, we'll build and extend your brand in digital places.
@@ -195,7 +203,8 @@ export default function SunnysidePage() {
                         <Link
                             to={ROUTES.SUNNY_SIDE}
                             className="font-fraunces font-extrabold uppercase text-sunnyside-very-dark-desaturated-blue underline decoration-sunnyside-soft-red/30 decoration-8 underline-offset-1 transition-colors duration-200 hover:decoration-sunnyside-soft-red
-                            tablet-md:text-base"
+                            tablet-md:text-base
+                            tablet-sm:text-lg"
                         >
                             Learn More
                         </Link>
