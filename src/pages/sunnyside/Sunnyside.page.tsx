@@ -37,9 +37,9 @@ export default function SunnysidePage() {
                         />
 
                         <ul
-                            className="flex flex-row gap-14
-                        text-sunnyside-white tablet-lg:gap-8 tablet-lg:text-base
-                        tablet-md:hidden"
+                            className="flex flex-row gap-14 text-sunnyside-white 
+                            tablet-lg:gap-8 tablet-lg:text-base
+                            tablet-md:hidden"
                         >
                             <li>
                                 <Link to={ROUTES.SUNNY_SIDE}>About</Link>
@@ -53,7 +53,7 @@ export default function SunnysidePage() {
                             <li>
                                 <Link
                                     to={ROUTES.SUNNY_SIDE}
-                                    className="hover:bg-sunnyside-light-blue rounded-3xl bg-sunnyside-white px-6 py-[0.9rem] font-fraunces uppercase text-sunnyside-very-dark-desaturated-blue transition-colors duration-200 hover:text-sunnyside-white
+                                    className="rounded-3xl bg-sunnyside-white px-6 py-[0.9rem] font-fraunces uppercase text-sunnyside-very-dark-desaturated-blue transition-colors duration-200 hover:bg-sunnyside-light-blue hover:text-sunnyside-white
                                     tablet-lg:px-4 tablet-lg:py-[0.8rem]"
                                 >
                                     Contact
@@ -92,7 +92,7 @@ export default function SunnysidePage() {
                                     <li>
                                         <Link
                                             to={ROUTES.SUNNY_SIDE}
-                                            className="hover:bg-sunnyside-light-blue rounded-3xl bg-sunnyside-yellow px-6 py-[0.9rem] font-fraunces text-base uppercase text-sunnyside-very-dark-desaturated-blue transition-colors duration-200 hover:text-sunnyside-white"
+                                            className="rounded-3xl bg-sunnyside-yellow px-6 py-[0.9rem] font-fraunces text-base uppercase text-sunnyside-very-dark-desaturated-blue transition-colors duration-200 hover:bg-sunnyside-light-blue hover:text-sunnyside-white"
                                         >
                                             Contact
                                         </Link>
@@ -252,70 +252,182 @@ export default function SunnysidePage() {
 
                 <section
                     id="reviews"
-                    className="flex flex-col items-center gap-32 p-40 text-center"
+                    className="flex flex-col items-center gap-32 p-40 text-center
+                    desktop-md:gap-24
+                    desktop-sm:px-24
+                    tablet-lg:px-16
+                    tablet-md:px-8
+                    tablet-sm:gap-16 tablet-sm:py-20"
                 >
-                    <h3 className="font-fraunces text-2xl font-[900] uppercase tracking-[0.6rem] text-sunnyside-grayish-blue">
+                    <h3
+                        className="font-fraunces text-2xl font-[900] uppercase tracking-[0.4rem] text-sunnyside-grayish-blue
+                        desktop-md:text-xl
+                        mobile-lg:text-lg
+                        mobile-md:tracking-[0.2rem]"
+                    >
                         Client Testimonials
                     </h3>
 
-                    <div className="grid grid-cols-[repeat(3,1fr)] grid-rows-[repeat(3,auto)] gap-x-40">
-                        <article className="grid grid-rows-subgrid gap-y-12 text-center [grid-row:1/4]">
+                    <div
+                        className="grid grid-cols-[repeat(3,1fr)] grid-rows-[repeat(3,auto)] gap-x-40
+                        desktop-lg:gap-x-20
+                        desktop-md:gap-x-10
+                        tablet-sm:grid-cols-1 tablet-sm:gap-x-0 tablet-sm:gap-y-16 tablet-sm:px-8
+                        mobile-lg:px-0"
+                    >
+                        <article
+                            className="grid grid-rows-subgrid gap-y-12 text-center [grid-row:1/4]
+                            tablet-sm:row-span-1 tablet-sm:grid-cols-subgrid tablet-sm:grid-rows-none tablet-sm:gap-y-6"
+                        >
                             <img
-                                className="size-28 justify-self-center rounded-full"
+                                className="size-28 justify-self-center rounded-full
+                                desktop-lg:size-24
+                                desktop-md:size-20
+                                tablet-lg:size-16
+                                tablet-md:size-14
+                                tablet-sm:size-20"
                                 src={emilyReviewProfileImage}
                                 alt="Emily R."
                             />
-                            <p className="text-xl text-sunnyside-very-dark-grayish-blue">
+                            <p
+                                className="text-xl text-sunnyside-very-dark-grayish-blue
+                                desktop-lg:text-lg
+                                desktop-sm:text-base
+                                tablet-lg:text-sm
+                                tablet-md:text-xs
+                                tablet-sm:text-lg"
+                            >
                                 We put our trust in Sunnyside and they delivered, making sure our needs were met and
                                 deadlines were always hit.
                             </p>
-                            <address className="flex flex-col items-center justify-center gap-2 not-italic">
-                                <h4 className="font-fraunces text-xl font-[900] text-sunnyside-very-dark-desaturated-blue">
+                            <address
+                                className="flex flex-col items-center justify-center gap-2 not-italic
+                                tablet-sm:gap-0"
+                            >
+                                <h4
+                                    className="font-fraunces text-xl font-[900] text-sunnyside-very-dark-desaturated-blue
+                                    desktop-md:text-lg
+                                    tablet-lg:text-base
+                                    tablet-md:text-sm
+                                    tablet-sm:text-lg"
+                                >
                                     Emily R.
                                 </h4>
-                                <p className="text-sunnyside-grayish-blue">Marketing Director</p>
+                                <p
+                                    className="text-sunnyside-grayish-blue
+                                    desktop-lg:text-base
+                                    desktop-md:text-sm
+                                    tablet-lg:text-xs
+                                    tablet-sm:text-base"
+                                >
+                                    Marketing Director
+                                </p>
                             </address>
                         </article>
 
-                        <article className="grid grid-rows-subgrid gap-y-10 text-center [grid-row:1/4]">
+                        <article
+                            className="grid grid-rows-subgrid gap-y-10 text-center [grid-row:1/4]
+                            tablet-sm:row-span-1 tablet-sm:grid-cols-subgrid tablet-sm:grid-rows-none tablet-sm:gap-y-6"
+                        >
                             <img
-                                className="size-28 self-center justify-self-center rounded-full"
+                                className="size-28 self-center justify-self-center rounded-full
+                                desktop-lg:size-24
+                                desktop-md:size-20
+                                tablet-lg:size-16
+                                tablet-md:size-14
+                                tablet-sm:size-20"
                                 src={thomasReviewProfileImage}
                                 alt="Thomas S."
                             />
-                            <p className="text-xl text-sunnyside-very-dark-grayish-blue">
+                            <p
+                                className="text-xl text-sunnyside-very-dark-grayish-blue
+                                desktop-lg:text-lg
+                                desktop-sm:text-base
+                                tablet-lg:text-sm
+                                tablet-md:text-xs
+                                tablet-sm:text-lg"
+                            >
                                 Sunnyside's enthusiasm coupled with their keen interest in our brand's success made it a
                                 satisfying and enjoyable experience.
                             </p>
-                            <address className="flex flex-col items-center justify-center gap-2 not-italic">
-                                <h4 className="font-fraunces text-xl font-[900] text-sunnyside-very-dark-desaturated-blue">
+                            <address
+                                className="flex flex-col items-center justify-center gap-2 not-italic
+                                tablet-sm:gap-0"
+                            >
+                                <h4
+                                    className="font-fraunces text-xl font-[900] text-sunnyside-very-dark-desaturated-blue
+                                    desktop-md:text-lg
+                                    tablet-lg:text-base
+                                    tablet-md:text-sm
+                                    tablet-sm:text-lg"
+                                >
                                     Thomas S.
                                 </h4>
-                                <p className="text-sunnyside-grayish-blue">Chief Operating Officer</p>
+                                <p
+                                    className="text-sunnyside-grayish-blue
+                                    desktop-lg:text-base
+                                    desktop-md:text-sm
+                                    tablet-lg:text-xs
+                                    tablet-sm:text-base"
+                                >
+                                    Chief Operating Officer
+                                </p>
                             </address>
                         </article>
 
-                        <article className="grid grid-rows-subgrid gap-y-10 text-center [grid-row:1/4]">
+                        <article
+                            className="grid grid-rows-subgrid gap-y-10 text-center [grid-row:1/4]
+                            tablet-sm:row-span-1 tablet-sm:grid-cols-subgrid tablet-sm:grid-rows-none tablet-sm:gap-y-6"
+                        >
                             <img
-                                className="size-28 self-center justify-self-center rounded-full"
+                                className="size-28 self-center justify-self-center rounded-full
+                                desktop-lg:size-24
+                                desktop-md:size-20
+                                tablet-lg:size-16
+                                tablet-md:size-14
+                                tablet-sm:size-20"
                                 src={jennieReviewProfileImage}
                                 alt="Jennie F."
                             />
-                            <p className="text-xl text-sunnyside-very-dark-grayish-blue">
+                            <p
+                                className="text-xl text-sunnyside-very-dark-grayish-blue
+                                desktop-lg:text-lg
+                                desktop-sm:text-base
+                                tablet-lg:text-sm
+                                tablet-md:text-xs
+                                tablet-sm:text-lg"
+                            >
                                 Incredible end result! Our sales increased over 400% when we worked with Sunnyside.
                                 Highly recommended!
                             </p>
-                            <address className="flex flex-col items-center justify-center gap-2 not-italic">
-                                <h4 className="font-fraunces text-xl font-[900] text-sunnyside-very-dark-desaturated-blue">
+                            <address
+                                className="flex flex-col items-center justify-center gap-2 not-italic
+                                tablet-sm:gap-0"
+                            >
+                                <h4
+                                    className="font-fraunces text-xl font-[900] text-sunnyside-very-dark-desaturated-blue
+                                    desktop-md:text-lg
+                                    tablet-lg:text-base
+                                    tablet-md:text-sm
+                                    tablet-sm:text-lg"
+                                >
                                     Jennie F.
                                 </h4>
-                                <p className="text-sunnyside-grayish-blue">Business Owner</p>
+                                <p
+                                    className="text-sunnyside-grayish-blue
+                                    desktop-lg:text-base
+                                    desktop-md:text-sm
+                                    tablet-lg:text-xs
+                                    tablet-sm:text-base"
+                                >
+                                    Business Owner
+                                </p>
                             </address>
                         </article>
                     </div>
                 </section>
 
-                <section
+                {/* <section
                     id="images"
                     className="grid w-full grid-cols-[repeat(4,1fr)] gap-0"
                 >
@@ -323,10 +435,10 @@ export default function SunnysidePage() {
                     <div className="h-[600px] bg-[url('@/assets/sunnyside/images/desktop/image-gallery-orange.jpg')] bg-cover bg-center bg-no-repeat" />
                     <div className="h-[600px] bg-[url('@/assets/sunnyside/images/desktop/image-gallery-cone.jpg')] bg-cover bg-center bg-no-repeat" />
                     <div className="h-[600px] bg-[url('@/assets/sunnyside/images/desktop/image-gallery-sugarcubes.jpg')] bg-cover bg-center bg-no-repeat" />
-                </section>
+                </section> */}
             </main>
 
-            <footer className="bg-sunnyside-light-moderate-cyan flex flex-col items-center justify-center gap-20 p-20 text-center">
+            {/* <footer className="flex flex-col items-center justify-center gap-20 bg-sunnyside-light-moderate-cyan p-20 text-center">
                 <nav
                     className="flex flex-col items-center gap-10"
                     aria-label="Site"
@@ -388,7 +500,7 @@ export default function SunnysidePage() {
                         </li>
                     </ul>
                 </nav>
-            </footer>
+            </footer> */}
         </div>
     );
 }
