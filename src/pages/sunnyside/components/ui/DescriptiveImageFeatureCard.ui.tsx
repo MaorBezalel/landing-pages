@@ -1,14 +1,19 @@
 type DescriptiveImageFeatureCardProps = {
-    order: number;
+    order: `order-[${number}]`;
     image: 'graphic-design' | 'photography';
     title: string;
     description: string;
 };
 
 export function DescriptiveImageFeatureCard({ order, image, title, description }: DescriptiveImageFeatureCardProps) {
+    const imageMap = {
+        'graphic-design': "bg-[url('@/assets/sunnyside/images/image-graphic-design.jpg')]",
+        photography: "bg-[url('@/assets/sunnyside/images/image-photography.jpg')]",
+    };
+
     return (
         <div
-            className={`order-${order} flex h-[600px] w-full flex-col items-center justify-end gap-10 bg-[url('@/assets/sunnyside/images/image-${image}.jpg')] bg-cover bg-center bg-no-repeat py-12 text-center
+            className={`${order} flex h-[600px] w-full flex-col items-center justify-end gap-10 ${imageMap[image]} bg-cover bg-center bg-no-repeat py-12 text-center
             desktop-sm:h-[500px]
             tablet-lg:h-[400px] tablet-lg:gap-4 tablet-lg:py-6`}
         >
