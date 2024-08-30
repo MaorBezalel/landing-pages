@@ -1,26 +1,27 @@
-import { useState, useRef, useEffect } from 'react';
+import { useState } from 'react';
+import { useClickAway } from '@/hooks';
 import Hamburger from 'hamburger-react';
 import { Link } from 'react-router-dom';
 import { ROUTES } from '@/constants';
-export function HamburgerMenu() {
-    const [isOpen, setOpen] = useState(false);
-    const menuRef = useRef<HTMLDivElement>(null!);
 
-    useEffect(() => {
-        if (isOpen) {
-            menuRef.current?.focus();
-        }
-    }, [isOpen]);
+export function HamburgerMenu() {
+    const [isOpen, setIsOpen] = useState(false);
+    const hamburgerMenuRef = useClickAway<HTMLDivElement>(() => {
+        setIsOpen(false);
+    });
 
     return (
-        <div className="hidden tablet-md:block">
+        <div
+            ref={hamburgerMenuRef}
+            className="hidden tablet-md:block"
+        >
             <Hamburger
                 color="#fff"
                 rounded
                 size={24}
                 label="Show menu"
                 toggled={isOpen}
-                toggle={setOpen}
+                toggle={setIsOpen}
             />
 
             <div
@@ -30,27 +31,36 @@ export function HamburgerMenu() {
                 } transition-opacity duration-200`}
                 aria-hidden={!isOpen}
                 aria-label="Hamburger menu"
-                tabIndex={-1} // This will make the menu focusable, but not tabbable
-                ref={menuRef}
-                onBlur={() => {
-                    if (isOpen) {
-                        setTimeout(() => setOpen(false), 0);
-                    }
-                }}
             >
                 <ul className="flex flex-col items-center gap-10 px-20 py-10 text-center text-xl text-sunnyside-very-dark-grayish-blue">
                     <li>
-                        <Link to={ROUTES.SUNNY_SIDE}>About</Link>
-                    </li>
-                    <li>
-                        <Link to={ROUTES.SUNNY_SIDE}>Services</Link>
-                    </li>
-                    <li>
-                        <Link to={ROUTES.SUNNY_SIDE}>Projects</Link>
+                        <Link
+                            to={ROUTES.SUNNY_SIDE}
+                            onClick={() => setIsOpen(false)}
+                        >
+                            About
+                        </Link>
                     </li>
                     <li>
                         <Link
                             to={ROUTES.SUNNY_SIDE}
+                            onClick={() => setIsOpen(false)}
+                        >
+                            Services
+                        </Link>
+                    </li>
+                    <li>
+                        <Link
+                            to={ROUTES.SUNNY_SIDE}
+                            onClick={() => setIsOpen(false)}
+                        >
+                            Projects
+                        </Link>
+                    </li>
+                    <li>
+                        <Link
+                            to={ROUTES.SUNNY_SIDE}
+                            onClick={() => setIsOpen(false)}
                             className="rounded-3xl bg-sunnyside-yellow px-6 py-[0.9rem] font-fraunces text-base uppercase text-sunnyside-very-dark-desaturated-blue transition-colors duration-200 hover:bg-sunnyside-light-blue hover:text-sunnyside-white"
                         >
                             Contact
