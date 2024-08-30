@@ -8,12 +8,24 @@ export default function HomePage() {
     return (
         <div className="flex w-full flex-col gap-20 p-10">
             <h1 className="self-center text-6xl text-sunnyside-soft-red">{'Landing Pages (Work In Progress)'}</h1>
-            <Link
-                to={ROUTES.SUNNY_SIDE}
-                className="text-cyan-600 underline"
-            >
-                Sunnyside
-            </Link>
+            <ul className="list-disc text-blue-400">
+                <li>
+                    <Link
+                        to={ROUTES.SUNNY_SIDE}
+                        className="text-2xl hover:text-blue-600"
+                    >
+                        {'Sunny Side'}
+                    </Link>
+                </li>
+                <li>
+                    <Link
+                        to={ROUTES.LOOPSTUDIOS}
+                        className="text-2xl hover:text-blue-600"
+                    >
+                        {'Loopstudios'}
+                    </Link>
+                </li>
+            </ul>
         </div>
     );
 }

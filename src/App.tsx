@@ -5,6 +5,7 @@ import { ROUTES } from '@/constants';
 
 const HomePage = lazy(() => import('@/pages/home/Home.page'));
 const SunnysidePage = lazy(() => import('@/pages/sunnyside/Sunnyside.page'));
+const LoopstudiosPage = lazy(() => import('@/pages/loopstudios/Loopstudios.page'));
 
 // prettier-ignore
 export function App() {
@@ -14,6 +15,7 @@ export function App() {
                 <Routes>
                     <Route path={ROUTES.HOME} element={<HomePage />} />
                     <Route path={ROUTES.SUNNY_SIDE} element={<SunnysidePage />} />
+                    <Route path={ROUTES.LOOPSTUDIOS} element={<LoopstudiosPage />} />
                 </Routes>
             </Suspense>
         </Router>

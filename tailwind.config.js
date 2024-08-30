@@ -32,11 +32,21 @@ export default {
                     'grayish-blue': 'hsl(210, 4%, 67%)',
                     white: 'hsl(0, 0%, 100%)',
                 },
+                loopstudios: {
+                    white: 'hsl(0, 0%, 100%)',
+                    black: 'hsl(0, 0%, 0%)',
+                    'dark-gray': 'hsl(0, 0%, 55%)',
+                    'very-dark-gray': 'hsl(0, 0%, 41%)',
+                },
             },
             fontFamily: {
-                // Sunnyside project fonts
+                /* Sunnyside Fonts */
                 barlow: ['Barlow', 'sans-serif'],
                 fraunces: ['Fraunces', 'serif'],
+
+                /* Loopstudios Fonts */
+                alata: ['Alata', 'sans-serif'],
+                'josefin-sans': ['Josefin Sans', 'sans-serif'],
             },
         },
         screens: {

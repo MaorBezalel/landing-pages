@@ -1,4 +1,5 @@
 @import url('assets/sunnyside/fonts/index.css');
+@import url('assets//loopstudios//fonts/index.css');
 
 @tailwind base;
 @tailwind components;
@@ -18,20 +19,17 @@
         @apply font-fraunces;
     }
     /* ------------------------------------------------------------- */
-}
 
-.menu-section::after {
-    content: '';
-    position: absolute;
-    margin-top: -25%;
-    right: 0;
-    top: 8rem;
-    width: 0;
-    height: 0;
-    transform: translate(0, 10%);
-    background-color: transparent;
-    border-left: 40px solid transparent;
-    /* border-bottom: 40px solid transparent; */
-    border-top: 40px solid transparent;
-    border-right: 40px solid white;
+    /* ----------------------Loopstudios Project---------------------- */
+    html[data-page='loopstudios'] body {
+        @apply font-alata text-[15px] font-normal;
+    }
+    html[data-page='loopstudios'] h1,
+    html[data-page='loopstudios'] h2,
+    html[data-page='loopstudios'] h3,
+    html[data-page='loopstudios'] h4,
+    html[data-page='loopstudios'] h5,
+    html[data-page='loopstudios'] h6 {
+        @apply font-josefin-sans font-[300];
+    }
 }
