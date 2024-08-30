@@ -6,9 +6,14 @@ export default function HomePage() {
     usePageConfig({ title: null, page: null });
 
     return (
-        <div>
-            <h1 className="text-sunnyside-soft-red text-3xl">Hello world!</h1>
-            <Link to={ROUTES.SUNNY_SIDE}>Go to Sunny Side</Link>
+        <div className="flex w-full flex-col gap-20 p-10">
+            <h1 className="self-center text-6xl text-sunnyside-soft-red">{'Landing Pages (Work In Progress'}</h1>
+            <Link
+                to={ROUTES.SUNNY_SIDE}
+                className="text-cyan-600 underline"
+            >
+                Sunnyside
+            </Link>
         </div>
     );
 }
