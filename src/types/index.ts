@@ -1,6 +1,6 @@
-export type PageHtmlData = ['sunnyside'][number];
+export type PageHtmlData = ['sunnyside', 'loopstudios'][number];
 
-export type PageTitle = ['Sunnyside agency landing page'][number];
+export type PageTitle = ['Sunnyside agency landing page', 'Loopstudios landing page'][number];
 
 export type PageConfig = {
     title: PageTitle | null;

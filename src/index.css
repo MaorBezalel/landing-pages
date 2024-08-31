@@ -33,3 +33,9 @@
         @apply font-josefin-sans font-[300];
     }
 }
+
+@layer utilities {
+    .container-highlight {
+        @apply border border-solid border-red-600;
+    }
+}
