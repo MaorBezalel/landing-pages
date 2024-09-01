@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { IconFacebook, IconInstagram, IconPinterest, IconTwitter } from '@/pages/sunnyside/components/icons';
+import { IconFacebook, IconInstagram, IconPinterest, IconTwitter } from '@/components/icons';
 import { ROUTES } from '@/constants';
 
 export function SocialLinks() {
