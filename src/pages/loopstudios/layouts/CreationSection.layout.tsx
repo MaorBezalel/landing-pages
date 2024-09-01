@@ -6,7 +6,7 @@ export function CreationSection() {
     return (
         <section
             aria-label="Creations"
-            className="container grid grid-cols-[repeat(4,1fr)] gap-10
+            className="container grid grid-cols-[repeat(4,1fr)] gap-10 px-2
             desktop-sm:gap-6
             tablet-lg:grid-cols-[repeat(auto-fill,minmax(150px,1fr))] tablet-lg:gap-4
             tablet-md:grid-cols-[1fr]"

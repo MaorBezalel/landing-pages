@@ -2,15 +2,20 @@ import { Link } from 'react-router-dom';
 import { ROUTES } from '@/constants';
 import logo from '@/assets/loopstudios/images/logo.svg';
 
-export function Logo() {
+type LogoProps = {
+    className?: string;
+};
+
+export function Logo({ className }: LogoProps) {
     return (
-        <Link to={ROUTES.LOOPSTUDIOS}>
+        <Link
+            className="inline-block w-fit"
+            to={ROUTES.LOOPSTUDIOS}
+        >
             <img
                 src={logo}
                 alt="Loopstudios"
-                className="relative z-20 h-[3rem] w-[13rem] object-contain
-                tablet-lg:h-[2.5rem] tablet-lg:w-[10rem]
-                tablet-md:w-[12rem]"
+                className={className}
             />
         </Link>
     );

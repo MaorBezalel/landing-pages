@@ -15,7 +15,11 @@ export function PrimaryNavigation() {
             className="flex items-center justify-between"
             aria-label="Primary"
         >
-            <Logo />
+            <Logo
+                className="relative z-20 h-[3rem] w-[13rem] object-contain
+                tablet-lg:h-[2.5rem] tablet-lg:w-[10rem]
+                tablet-md:w-[12rem]"
+            />
 
             <ul
                 className="flex flex-row items-center gap-10

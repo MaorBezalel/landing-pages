@@ -7,7 +7,10 @@ import {
     Main,
     AboutSection,
     CreationSection,
+    Footer,
+    SecondaryNavigation,
 } from '@/pages/loopstudios/layouts';
+import { Logo, CopyRight, SocialMediaLinks } from '@/pages/loopstudios/components/ui';
 
 export default function LoopstudiosPage() {
     usePageConfig({ title: 'Loopstudios landing page', page: 'loopstudios' });
@@ -24,7 +27,12 @@ export default function LoopstudiosPage() {
                 <CreationSection />
             </Main>
 
-            <footer></footer>
+            <Footer>
+                <Logo />
+                <SocialMediaLinks />
+                <SecondaryNavigation />
+                <CopyRight />
+            </Footer>
         </Wrapper>
     );
 }
