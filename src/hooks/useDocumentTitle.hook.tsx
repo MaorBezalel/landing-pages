@@ -11,7 +11,7 @@ export function useDocumentTitle(title: PageTitle | null) {
         if (title) {
             document.title = title;
         } else {
-            document.title = 'Maor Bezalel Landing Pages Portfolio';
+            document.title = 'Landing Pages Portfolio - Maor Bezalel';
         }
     }, [title]);
 }
