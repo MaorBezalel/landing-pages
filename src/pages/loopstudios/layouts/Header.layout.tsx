@@ -7,7 +7,7 @@ export function Header({ children }: PropsWithChildren) {
             tablet-md:bg-[url('@/assets/loopstudios/images/mobile/image-hero.jpg')]"
         >
             <div
-                className="container-highlight container flex flex-col gap-32 px-2 pb-32 pt-10
+                className="container flex flex-col gap-32 px-2 pb-32 pt-10
                 tablet-md:gap-60
                 tablet-sm:gap-52 tablet-sm:pt-6
                 mobile-lg:min-h-[100dvh] mobile-lg:gap-40

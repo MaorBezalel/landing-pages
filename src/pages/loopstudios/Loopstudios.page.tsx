@@ -1,5 +1,13 @@
 import { usePageConfig } from '@/hooks';
-import { Wrapper, Header, PrimaryNavigation, Hero } from '@/pages/loopstudios/layouts';
+import {
+    Wrapper,
+    Header,
+    PrimaryNavigation,
+    Hero,
+    Main,
+    AboutSection,
+    CreationSection,
+} from '@/pages/loopstudios/layouts';
 
 export default function LoopstudiosPage() {
     usePageConfig({ title: 'Loopstudios landing page', page: 'loopstudios' });
@@ -11,7 +19,10 @@ export default function LoopstudiosPage() {
                 <Hero />
             </Header>
 
-            <main></main>
+            <Main>
+                <AboutSection />
+                <CreationSection />
+            </Main>
 
             <footer></footer>
         </Wrapper>
