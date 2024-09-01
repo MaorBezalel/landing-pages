@@ -10,7 +10,7 @@ type LogoProps = {
 
 export function Logo({ type, className }: LogoProps) {
     return (
-        <Link to={ROUTES.SUNNY_SIDE}>
+        <Link to={ROUTES.SUNNYSIDE}>
             <img
                 src={type === 'header' ? logoHeader : logoFooter}
                 alt="Sunnyside"

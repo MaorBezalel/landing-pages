@@ -57,7 +57,7 @@ export function DescriptiveFeatureCard({
                 {description}
             </p>
             <Link
-                to={ROUTES.SUNNY_SIDE}
+                to={ROUTES.SUNNYSIDE}
                 className={`font-fraunces font-extrabold uppercase text-sunnyside-very-dark-desaturated-blue underline ${ctaColorMap[ctaColor].regular} decoration-8 underline-offset-1 transition-colors duration-200 ${ctaColorMap[ctaColor].hover}
                 tablet-md:text-base
                 tablet-sm:text-lg`}

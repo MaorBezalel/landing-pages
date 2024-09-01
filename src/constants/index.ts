@@ -1,5 +1,5 @@
 export const ROUTES = {
     HOME: '/',
-    SUNNY_SIDE: '/sunnyside',
+    SUNNYSIDE: '/sunnyside',
     LOOPSTUDIOS: '/loopstudios',
 } as const;

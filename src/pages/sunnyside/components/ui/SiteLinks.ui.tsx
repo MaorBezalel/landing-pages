@@ -15,17 +15,17 @@ export function SiteLinks({ type }: SiteLinksProps) {
                     tablet-md:hidden"
                 >
                     <li>
-                        <Link to={ROUTES.SUNNY_SIDE}>About</Link>
+                        <Link to={ROUTES.SUNNYSIDE}>About</Link>
                     </li>
                     <li>
-                        <Link to={ROUTES.SUNNY_SIDE}>Services</Link>
+                        <Link to={ROUTES.SUNNYSIDE}>Services</Link>
                     </li>
                     <li>
-                        <Link to={ROUTES.SUNNY_SIDE}>Projects</Link>
+                        <Link to={ROUTES.SUNNYSIDE}>Projects</Link>
                     </li>
                     <li>
                         <Link
-                            to={ROUTES.SUNNY_SIDE}
+                            to={ROUTES.SUNNYSIDE}
                             className="rounded-3xl bg-sunnyside-white px-6 py-[0.9rem] font-fraunces uppercase text-sunnyside-very-dark-desaturated-blue transition-colors duration-200 hover:bg-sunnyside-light-blue hover:text-sunnyside-white
                             tablet-lg:px-4 tablet-lg:py-[0.8rem]"
                         >
@@ -39,7 +39,7 @@ export function SiteLinks({ type }: SiteLinksProps) {
                 <ul className="flex flex-row gap-16">
                     <li>
                         <Link
-                            to={ROUTES.SUNNY_SIDE}
+                            to={ROUTES.SUNNYSIDE}
                             className="text-sunnyside-dark-moderate-cyan transition-colors duration-200 hover:text-sunnyside-white"
                         >
                             About
@@ -47,7 +47,7 @@ export function SiteLinks({ type }: SiteLinksProps) {
                     </li>
                     <li>
                         <Link
-                            to={ROUTES.SUNNY_SIDE}
+                            to={ROUTES.SUNNYSIDE}
                             className="text-sunnyside-dark-moderate-cyan transition-colors duration-200 hover:text-sunnyside-white"
                         >
                             Services
@@ -55,7 +55,7 @@ export function SiteLinks({ type }: SiteLinksProps) {
                     </li>
                     <li>
                         <Link
-                            to={ROUTES.SUNNY_SIDE}
+                            to={ROUTES.SUNNYSIDE}
                             className="text-sunnyside-dark-moderate-cyan transition-colors duration-200 hover:text-sunnyside-white"
                         >
                             Projects

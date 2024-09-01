@@ -35,7 +35,7 @@ export function HamburgerMenu() {
                 <ul className="flex flex-col items-center gap-10 px-20 py-10 text-center text-xl text-sunnyside-very-dark-grayish-blue">
                     <li>
                         <Link
-                            to={ROUTES.SUNNY_SIDE}
+                            to={ROUTES.SUNNYSIDE}
                             onClick={() => setIsOpen(false)}
                         >
                             About
@@ -43,7 +43,7 @@ export function HamburgerMenu() {
                     </li>
                     <li>
                         <Link
-                            to={ROUTES.SUNNY_SIDE}
+                            to={ROUTES.SUNNYSIDE}
                             onClick={() => setIsOpen(false)}
                         >
                             Services
@@ -51,7 +51,7 @@ export function HamburgerMenu() {
                     </li>
                     <li>
                         <Link
-                            to={ROUTES.SUNNY_SIDE}
+                            to={ROUTES.SUNNYSIDE}
                             onClick={() => setIsOpen(false)}
                         >
                             Projects
@@ -59,7 +59,7 @@ export function HamburgerMenu() {
                     </li>
                     <li>
                         <Link
-                            to={ROUTES.SUNNY_SIDE}
+                            to={ROUTES.SUNNYSIDE}
                             onClick={() => setIsOpen(false)}
                             className="rounded-3xl bg-sunnyside-yellow px-6 py-[0.9rem] font-fraunces text-base uppercase text-sunnyside-very-dark-desaturated-blue transition-colors duration-200 hover:bg-sunnyside-light-blue hover:text-sunnyside-white"
                         >

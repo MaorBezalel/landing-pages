@@ -14,7 +14,7 @@ export function App() {
             <Suspense fallback={<LoadingSpinner />}>
                 <Routes>
                     <Route path={ROUTES.HOME} element={<HomePage />} />
-                    <Route path={ROUTES.SUNNY_SIDE} element={<SunnysidePage />} />
+                    <Route path={ROUTES.SUNNYSIDE} element={<SunnysidePage />} />
                     <Route path={ROUTES.LOOPSTUDIOS} element={<LoopstudiosPage />} />
                 </Routes>
             </Suspense>

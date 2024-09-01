@@ -11,7 +11,7 @@ export default function HomePage() {
             <ul className="list-disc text-blue-400">
                 <li>
                     <Link
-                        to={ROUTES.SUNNY_SIDE}
+                        to={ROUTES.SUNNYSIDE}
                         className="text-2xl hover:text-blue-600"
                     >
                         {'Sunny Side'}

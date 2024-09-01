@@ -9,22 +9,22 @@ export function SocialLinks() {
             className="flex flex-row items-center gap-8"
         >
             <li>
-                <Link to={ROUTES.SUNNY_SIDE}>
+                <Link to={ROUTES.SUNNYSIDE}>
                     <IconFacebook className="text-sunnyside-dark-desaturated-cyan transition-colors duration-200 hover:text-sunnyside-white" />
                 </Link>
             </li>
             <li>
-                <Link to={ROUTES.SUNNY_SIDE}>
+                <Link to={ROUTES.SUNNYSIDE}>
                     <IconInstagram className="text-sunnyside-dark-desaturated-cyan transition-colors duration-200 hover:text-sunnyside-white" />
                 </Link>
             </li>
             <li>
-                <Link to={ROUTES.SUNNY_SIDE}>
+                <Link to={ROUTES.SUNNYSIDE}>
                     <IconTwitter className="text-sunnyside-dark-desaturated-cyan transition-colors duration-200 hover:text-sunnyside-white" />
                 </Link>
             </li>
             <li>
-                <Link to={ROUTES.SUNNY_SIDE}>
+                <Link to={ROUTES.SUNNYSIDE}>
                     <IconPinterest className="text-sunnyside-dark-desaturated-cyan transition-colors duration-200 hover:text-sunnyside-white" />
                 </Link>
             </li>
