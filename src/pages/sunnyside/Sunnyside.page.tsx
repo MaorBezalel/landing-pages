@@ -10,7 +10,7 @@ import {
     ImageGallerySection,
     SecondaryNavigation,
     Footer,
-} from '@/pages/sunnyside/layout';
+} from '@/pages/sunnyside/layouts';
 import { SocialLinks } from '@/pages/sunnyside/components/ui';
 
 export default function SunnysidePage() {

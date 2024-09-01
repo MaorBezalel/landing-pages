@@ -1,0 +1,10 @@
+export { Wrapper } from '@/pages/sunnyside/layouts/Wrapper.layout';
+export { Header } from '@/pages/sunnyside/layouts/Header.layout';
+export { Hero } from '@/pages/sunnyside/layouts/Hero.layout';
+export { PrimaryNavigation } from '@/pages/sunnyside/layouts/PrimaryNavigation.layout';
+export { Main } from '@/pages/sunnyside/layouts/Main.layout';
+export { FeaturesSection } from '@/pages/sunnyside/layouts/FeaturesSection.layout';
+export { ReviewsSection } from '@/pages/sunnyside/layouts/ReviewsSection.layout';
+export { ImageGallerySection } from '@/pages/sunnyside/layouts/ImageGallerySection.layout';
+export { Footer } from '@/pages/sunnyside/layouts/Footer.layout';
+export { SecondaryNavigation } from '@/pages/sunnyside/layouts/SecondaryNavigation.layout';
