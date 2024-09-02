@@ -46,6 +46,20 @@ export default {
                     'dark-gray': 'hsl(0, 0%, 55%)',
                     'very-dark-gray': 'hsl(0, 0%, 41%)',
                 },
+                blogr: {
+                    'light-red': 'hsl(356, 100%, 66%)', // CTA text
+                    'very-light-red': 'hsl(355, 100%, 74%)', // CTA hover background
+                    'very-dark-blue': 'hsl(208, 49%, 24%)', // headings
+                    white: 'hsl(0, 0%, 100%)', // text
+                    'grayish-blue': 'hsl(240, 2%, 79%)', // footer text
+                    'very-dark-grayish-blue': 'hsl(207, 13%, 34%)', // body copy
+                    'very-dark-black-blue': 'hsl(240, 10%, 16%)', // footer background
+                },
+            },
+            backgroundImage: {
+                /* Blogr Gradients */
+                'gradient-blogr-cta': 'linear-gradient(135deg, hsl(13, 100%, 72%), hsl(353, 100%, 62%))',
+                'gradient-blogr-body': 'linear-gradient(135deg, hsl(237, 17%, 21%), hsl(237, 23%, 32%))',
             },
             fontFamily: {
                 /* Sunnyside Fonts */
@@ -55,6 +69,10 @@ export default {
                 /* Loopstudios Fonts */
                 alata: ['Alata', 'sans-serif'],
                 'josefin-sans': ['Josefin Sans', 'sans-serif'],
+
+                /* Blogr Fonts */
+                overpass: ['Overpass', 'sans-serif'],
+                ubuntu: ['Ubuntu', 'sans-serif'],
             },
         },
         screens: {

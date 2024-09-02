@@ -25,6 +25,14 @@ export default function HomePage() {
                         {'Loopstudios'}
                     </Link>
                 </li>
+                <li>
+                    <Link
+                        to={ROUTES.BLOGR}
+                        className="text-2xl hover:text-blue-600"
+                    >
+                        {'Blogr'}
+                    </Link>
+                </li>
             </ul>
         </div>
     );
