@@ -1,7 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 export default {
     content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
-    mode: 'jit',
     theme: {
         extend: {
             backgroundSize: {
@@ -57,9 +56,16 @@ export default {
                 },
             },
             backgroundImage: {
-                /* Blogr Gradients */
-                'gradient-blogr-cta': 'linear-gradient(135deg, hsl(13, 100%, 72%), hsl(353, 100%, 62%))',
-                'gradient-blogr-body': 'linear-gradient(135deg, hsl(237, 17%, 21%), hsl(237, 23%, 32%))',
+                /* ----------------------------------------------- Blogr ----------------------------------------------- */
+                /* Gradients */
+                'blogr-gradient-cta': 'linear-gradient(135deg, hsl(13, 100%, 72%), hsl(353, 100%, 62%))',
+                'blogr-gradient-body': 'linear-gradient(135deg, hsl(237, 17%, 21%), hsl(237, 23%, 32%))',
+
+                /* Images */
+                'blogr-image-pattern-intro-desktop':
+                    "url('@/assets/blogr/images/bg-pattern-intro-desktop.svg'), linear-gradient(to right, hsl(13, 100%, 72%), hsl(353, 100%, 62%))",
+                'blogr-image-pattern-intro-mobile':
+                    "url('@/assets/blogr/images/bg-pattern-intro-mobile.svg'), linear-gradient(to right, hsl(13, 100%, 72%), hsl(353, 100%, 62%))",
             },
             fontFamily: {
                 /* Sunnyside Fonts */

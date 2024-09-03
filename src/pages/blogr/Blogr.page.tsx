@@ -1,7 +1,19 @@
 import { usePageConfig } from '@/hooks';
+import { Wrapper } from '@/layouts';
+import { Header, PrimaryNavigation, Hero } from '@/pages/blogr/layouts';
 
 export default function Blogr() {
     usePageConfig({ title: 'Blogr landing page', page: 'blogr' });
+    return (
+        <Wrapper>
+            <Header>
+                <PrimaryNavigation />
+                <Hero />
+            </Header>
 
-    return <div className="bg-gradient-blogr-cta h-80 w-80"></div>;
+            <main></main>
+
+            <footer></footer>
+        </Wrapper>
+    );
 }
