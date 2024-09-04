@@ -34,7 +34,7 @@ export function AboutSection() {
             </h2>
 
             <div
-                className="tablet-md:item-center grid grid-cols-[1fr_1fr] grid-rows-[repeat(2,1)] gap-x-32
+                className="grid grid-cols-[1fr_1fr] grid-rows-[repeat(2,1)] gap-x-32
                 gap-y-20
                 desktop-md:gap-x-60
                 desktop-sm:gap-x-32 tablet-lg:gap-x-10
