@@ -1,6 +1,6 @@
 import { usePageConfig } from '@/hooks';
 import { Wrapper } from '@/layouts';
-import { Header, PrimaryNavigation, Hero, AboutSection } from '@/pages/blogr/layouts';
+import { Header, PrimaryNavigation, Hero, AboutSection, FeaturesSection } from '@/pages/blogr/layouts';
 
 export default function Blogr() {
     usePageConfig({ title: 'Blogr landing page', page: 'blogr' });
@@ -12,8 +12,9 @@ export default function Blogr() {
                 <Hero />
             </Header>
 
-            <main className="">
+            <main className="flex flex-col gap-40">
                 <AboutSection />
+                <FeaturesSection />
             </main>
 
             <footer></footer>
