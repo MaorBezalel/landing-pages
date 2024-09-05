@@ -1,6 +1,7 @@
 import { Logo } from '@/components/ui';
 import { DesktopPrimaryNav, MobilePrimaryNav } from '@/pages/blogr/components/ui';
 import logoSrc from '@/assets/blogr/images/logo.svg';
+import { ROUTES } from '@/constants';
 
 export function PrimaryNavigation() {
     return (
@@ -10,6 +11,7 @@ export function PrimaryNavigation() {
             tablet-md:justify-between"
         >
             <Logo
+                link={ROUTES.BLOGR}
                 src={logoSrc}
                 alt="Blogr"
             />

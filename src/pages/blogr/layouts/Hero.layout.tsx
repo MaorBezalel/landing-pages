@@ -6,7 +6,7 @@ export function Hero() {
         <section
             aria-label="Hero"
             className="my-auto flex flex-col gap-20
-        desktop-md:gap-14"
+            desktop-md:gap-14"
         >
             <hgroup
                 id="hero-heading"
@@ -14,21 +14,21 @@ export function Hero() {
             >
                 <h1
                     className="text-8xl font-[700] text-blogr-white
-                desktop-lg:text-7xl
-                desktop-md:text-6xl
-                tablet-sm:text-5xl
-                mobile-lg:text-4xl
-                mobile-md:text-3xl"
+                    desktop-lg:text-7xl
+                    desktop-md:text-6xl
+                    tablet-sm:text-5xl
+                    mobile-lg:text-4xl
+                    mobile-md:text-3xl"
                 >
                     A modern publishing platform
                 </h1>
                 <p
                     className="text-2xl text-blogr-white/70
-                desktop-lg:text-xl
-                desktop-md:text-lg
-                tablet-sm:text-base
-                mobile-lg:px-10
-                mobile-md:px-8"
+                    desktop-lg:text-xl
+                    desktop-md:text-lg
+                    tablet-sm:text-base
+                    mobile-lg:px-10
+                    mobile-md:px-8"
                 >
                     Grow your audience and build your online brand
                 </p>
