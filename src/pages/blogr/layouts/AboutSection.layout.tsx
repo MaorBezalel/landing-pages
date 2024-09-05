@@ -19,6 +19,7 @@ export function AboutSection() {
 
     return (
         <section
+            aria-label="About"
             className="container relative flex flex-col gap-32
             tablet-lg:gap-20
             tablet-md:gap-10"

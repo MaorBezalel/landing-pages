@@ -27,14 +27,17 @@ export function DesktopPrimaryNav() {
                 tablet-lg:gap-4
                 tablet-md:hidden"
             >
-                {navItems.map((navItem) => (
-                    <li>
+                {navItems.map((navItem, index) => (
+                    <li key={index}>
                         <DropdownMenu
                             button={({ isOpen, setIsOpen }) => (
                                 <button
                                     onClick={() => setIsOpen(!isOpen)}
                                     data-toggled={isOpen}
                                     className="group relative inline-flex items-center justify-center text-center text-blogr-white/70 hover:text-blogr-white active:text-blogr-white data-[toggled=true]:text-blogr-white"
+                                    aria-expanded={isOpen}
+                                    aria-controls={`${navItem.label}-dropdown-menu`}
+                                    aria-haspopup="true"
                                 >
                                     <span
                                         className="px-1 text-base font-[500] capitalize decoration-2 underline-offset-2 group-hover:underline group-data-[toggled=true]:underline
@@ -43,6 +46,7 @@ export function DesktopPrimaryNav() {
                                         {navItem.label}
                                     </span>
                                     <IconMenu
+                                        role="presentation"
                                         open={isOpen}
                                         className="ms-auto mt-[0.1rem] size-4
                                         tablet-lg:size-3"
@@ -52,11 +56,13 @@ export function DesktopPrimaryNav() {
                         >
                             {({ isOpen, setIsOpen }) => (
                                 <ul
+                                    id={`${navItem.label}-dropdown-menu`}
                                     className="flex w-40 flex-col gap-4 rounded-md bg-blogr-white py-10 pe-20 ps-5
                                     tablet-lg:w-32 tablet-lg:py-8 tablet-lg:pe-16 tablet-lg:ps-4"
+                                    aria-hidden={!isOpen}
                                 >
-                                    {navItem.menu.map((menuItem) => (
-                                        <li>
+                                    {navItem.menu.map((menuItem, index) => (
+                                        <li key={index}>
                                             <Link
                                                 to={ROUTES.BLOGR}
                                                 tabIndex={isOpen ? 0 : -1}

@@ -19,6 +19,7 @@ export function FeaturesSection() {
 
     return (
         <section
+            aria-label="Features"
             className="container relative grid grid-cols-[1fr_1fr] grid-rows-[repeat(2,1fr)] gap-x-32 gap-y-20
             desktop-md:gap-x-10
             desktop-sm:gap-x-32
