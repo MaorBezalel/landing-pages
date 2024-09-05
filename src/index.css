@@ -12,6 +12,7 @@
     svg {
         @apply pointer-events-none;
     }
+    /* --------------------------------------------------------- */
 
     /* ----------------------Sunnyside Project---------------------- */
     html[data-page='sunnyside'] body {

@@ -1,4 +1,8 @@
-import { Logo, SiteLinks } from '@/pages/sunnyside/components/ui';
+import { Logo } from '@/components/ui';
+import { DesktopSiteLinks } from '@/pages/sunnyside/components/ui';
+import { ROUTES } from '@/constants';
+
+import logoFooter from '@/assets/sunnyside/images/logo-footer.svg';
 
 export function SecondaryNavigation() {
     return (
@@ -7,10 +11,12 @@ export function SecondaryNavigation() {
             aria-label="Secondary"
         >
             <Logo
-                type="footer"
+                link={ROUTES.SUNNYSIDE}
+                src={logoFooter}
+                alt="Sunnyside"
                 className="h-[2.5rem] w-[12rem] object-contain"
             />
-            <SiteLinks type="footer" />
+            <DesktopSiteLinks type="footer" />
         </nav>
     );
 }

@@ -35,8 +35,11 @@ export function MobilePrimaryNav() {
             )}
         >
             <menu className="flex w-80 flex-col items-center justify-center gap-6 rounded-md bg-white py-5">
-                {navItems.map((navItem) => (
-                    <li className="w-full">
+                {navItems.map((navItem, index) => (
+                    <li
+                        key={index}
+                        className="w-full"
+                    >
                         <Accordion
                             button={({ isOpen, setIsOpen }) => (
                                 <button
@@ -59,8 +62,8 @@ export function MobilePrimaryNav() {
                                     className="flex w-40 flex-col items-center justify-center gap-4 rounded-sm bg-blogr-grayish-blue px-10 py-5
                                     mobile-lg:w-32"
                                 >
-                                    {navItem.menu.map((menuItem) => (
-                                        <li>
+                                    {navItem.menu.map((menuItem, index) => (
+                                        <li key={index}>
                                             <Link
                                                 to={ROUTES.BLOGR}
                                                 tabIndex={isOpen ? 0 : -1}

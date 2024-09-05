@@ -1,9 +1,10 @@
-import { HamburgerDrawer } from '@/pages/loopstudios/lib';
-import { Logo } from '@/pages/loopstudios/components/ui';
-import { Link } from 'react-router-dom';
 import { useState } from 'react';
-import { ROUTES } from '@/constants';
 import { useIsDomReady } from '@/hooks';
+import { Link } from 'react-router-dom';
+import { HamburgerDrawer } from '@/pages/loopstudios/lib';
+import { Logo } from '@/components/ui';
+import { ROUTES } from '@/constants';
+import logoSrc from '@/assets/loopstudios/images/logo.svg';
 
 export function PrimaryNavigation() {
     const [isOpen, setIsOpen] = useState(false);
@@ -16,6 +17,9 @@ export function PrimaryNavigation() {
             aria-label="Primary"
         >
             <Logo
+                link={ROUTES.LOOPSTUDIOS}
+                src={logoSrc}
+                alt="Loopstudios"
                 className="relative z-20 h-[3rem] w-[13rem] object-contain
                 tablet-lg:h-[2.5rem] tablet-lg:w-[10rem]
                 tablet-md:w-[12rem]"
@@ -27,8 +31,8 @@ export function PrimaryNavigation() {
                 tablet-lg:gap-6
                 tablet-md:hidden"
             >
-                {endpoints.map((endpoint) => (
-                    <li>
+                {endpoints.map((endpoint, index) => (
+                    <li key={index}>
                         <Link
                             to={ROUTES.LOOPSTUDIOS}
                             className="relative inline-block text-lg text-loopstudios-white before:absolute before:-bottom-1 before:left-1/2 before:h-[2px] before:w-0 before:-translate-x-1/2 before:bg-loopstudios-white before:duration-200 before:ease-in-out before:[transition-property:width] hover:before:w-[50%]
@@ -52,8 +56,8 @@ export function PrimaryNavigation() {
                         isOpen ? 'opacity-100 delay-[400ms]' : 'opacity-0'
                     }`}
                 >
-                    {endpoints.map((endpoint) => (
-                        <li>
+                    {endpoints.map((endpoint, index) => (
+                        <li key={index}>
                             <Link
                                 to={ROUTES.LOOPSTUDIOS}
                                 className="font-josefin-sans text-3xl uppercase text-loopstudios-white hover:text-loopstudios-white"

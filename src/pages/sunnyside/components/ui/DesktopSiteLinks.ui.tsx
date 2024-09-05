@@ -1,11 +1,11 @@
 import { Link } from 'react-router-dom';
 import { ROUTES } from '@/constants';
 
-type SiteLinksProps = {
+type DesktopSiteLinksProps = {
     type: 'header' | 'footer';
 };
 
-export function SiteLinks({ type }: SiteLinksProps) {
+export function DesktopSiteLinks({ type }: DesktopSiteLinksProps) {
     switch (type) {
         case 'header':
             return (

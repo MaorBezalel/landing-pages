@@ -1,6 +1,6 @@
 import { usePageConfig } from '@/hooks';
+import { Wrapper } from '@/layouts';
 import {
-    Wrapper,
     Header,
     Hero,
     PrimaryNavigation,

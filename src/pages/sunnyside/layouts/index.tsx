@@ -1,4 +1,3 @@
-export { Wrapper } from '@/pages/sunnyside/layouts/Wrapper.layout';
 export { Header } from '@/pages/sunnyside/layouts/Header.layout';
 export { Hero } from '@/pages/sunnyside/layouts/Hero.layout';
 export { PrimaryNavigation } from '@/pages/sunnyside/layouts/PrimaryNavigation.layout';

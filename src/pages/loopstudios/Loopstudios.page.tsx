@@ -1,6 +1,6 @@
 import { usePageConfig } from '@/hooks';
+import { Wrapper } from '@/layouts';
 import {
-    Wrapper,
     Header,
     PrimaryNavigation,
     Hero,
@@ -10,13 +10,16 @@ import {
     Footer,
     SecondaryNavigation,
 } from '@/pages/loopstudios/layouts';
-import { Logo, CopyRight, SocialMediaLinks } from '@/pages/loopstudios/components/ui';
+import { Logo } from '@/components/ui';
+import { CopyRight, SocialMediaLinks } from '@/pages/loopstudios/components/ui';
+import logoSrc from '@/assets/loopstudios/images/logo.svg';
+import { ROUTES } from '@/constants';
 
 export default function LoopstudiosPage() {
     usePageConfig({ title: 'Loopstudios landing page', page: 'loopstudios' });
 
     return (
-        <Wrapper>
+        <Wrapper id="wrapper">
             <Header>
                 <PrimaryNavigation />
                 <Hero />
@@ -28,7 +31,11 @@ export default function LoopstudiosPage() {
             </Main>
 
             <Footer>
-                <Logo />
+                <Logo
+                    link={ROUTES.LOOPSTUDIOS}
+                    src={logoSrc}
+                    alt="Loopstudios"
+                />
                 <SocialMediaLinks />
                 <SecondaryNavigation />
                 <CopyRight />
