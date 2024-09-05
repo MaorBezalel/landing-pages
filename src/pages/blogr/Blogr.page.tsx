@@ -5,6 +5,7 @@ import {
     Header,
     PrimaryNavigation,
     Hero,
+    Main,
     AboutSection,
     ServicesSection,
     FeaturesSection,
@@ -33,11 +34,11 @@ export default function Blogr() {
                 <Hero />
             </Header>
 
-            <main>
+            <Main>
                 <AboutSection />
                 <ServicesSection />
                 <FeaturesSection />
-            </main>
+            </Main>
 
             <Footer>
                 <Logo

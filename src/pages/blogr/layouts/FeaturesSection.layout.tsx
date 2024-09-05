@@ -20,11 +20,11 @@ export function FeaturesSection() {
     return (
         <section
             aria-label="Features"
-            className="container relative mb-20 grid grid-cols-[1fr_1fr] grid-rows-[repeat(2,1fr)] gap-x-32 gap-y-20
+            className="container relative grid grid-cols-[1fr_1fr] grid-rows-[repeat(2,1fr)] gap-x-32 gap-y-20
             desktop-md:gap-x-10
             desktop-sm:gap-x-32
             tablet-lg:gap-x-10 tablet-lg:gap-y-10 
-            tablet-md:mb-8 tablet-md:flex tablet-md:flex-col tablet-md:items-center tablet-md:justify-center"
+            tablet-md:flex tablet-md:flex-col tablet-md:items-center tablet-md:justify-center"
         >
             {subsections.map((section, index) => (
                 <section
