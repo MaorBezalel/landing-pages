@@ -1,6 +1,21 @@
 import { usePageConfig } from '@/hooks';
+
 import { Wrapper } from '@/layouts';
-import { Header, PrimaryNavigation, Hero, AboutSection, ServicesSection, FeaturesSection } from '@/pages/blogr/layouts';
+import {
+    Header,
+    PrimaryNavigation,
+    Hero,
+    AboutSection,
+    ServicesSection,
+    FeaturesSection,
+    Footer,
+} from '@/pages/blogr/layouts';
+
+import { ContactInfo } from '@/pages/blogr/components/ui';
+
+import { Logo } from '@/components/ui';
+import logoSrc from '@/assets/blogr/images/logo.svg';
+import { ROUTES } from '@/constants';
 
 export default function Blogr() {
     usePageConfig({ title: 'Blogr landing page', page: 'blogr' });
@@ -24,7 +39,14 @@ export default function Blogr() {
                 <FeaturesSection />
             </main>
 
-            <footer></footer>
+            <Footer>
+                <Logo
+                    link={ROUTES.BLOGR}
+                    src={logoSrc}
+                    alt="Blogr"
+                />
+                <ContactInfo />
+            </Footer>
         </Wrapper>
     );
 }
