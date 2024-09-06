@@ -27,9 +27,9 @@ export function PrimaryNavigation() {
                 className="bg-huddle-white text-huddle-very-dark-cyan rounded-full px-20 py-4 text-center font-[700] shadow-xl hover:opacity-80
                 desktop-lg:px-16 desktop-lg:py-3
                 tablet-lg:px-12 tablet-lg:py-2
-                tablet-sm:px-8 tablet-sm:py-1
-                mobile-lg:text-base
-                mobile-md:px-7 mobile-md:py-2 mobile-md:text-sm"
+                tablet-sm:px-8 tablet-sm:text-base
+                mobile-lg:text-sm 
+                mobile-md:px-7"
             >
                 Try It Free
             </Link>
