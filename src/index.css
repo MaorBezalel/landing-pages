@@ -1,6 +1,7 @@
 @import url('assets/sunnyside/fonts/index.css');
 @import url('assets//loopstudios//fonts/index.css');
 @import url('assets/blogr/fonts/index.css');
+@import url('assets/huddle/fonts/index.css');
 
 @tailwind base;
 @tailwind components;
@@ -54,6 +55,21 @@
     html[data-page='blogr'] h5,
     html[data-page='blogr'] h6 {
         @apply font-overpass font-[600];
+    }
+    /* ------------------------------------------------------------- */
+
+    /* ----------------------Huddle Project---------------------- */
+    html[data-page='huddle'] body {
+        @apply font-open-sans text-[18px];
+    }
+
+    html[data-page='huddle'] h1,
+    html[data-page='huddle'] h2,
+    html[data-page='huddle'] h3,
+    html[data-page='huddle'] h4,
+    html[data-page='huddle'] h5,
+    html[data-page='huddle'] h6 {
+        @apply font-poppins font-[600];
     }
     /* ------------------------------------------------------------- */
 }

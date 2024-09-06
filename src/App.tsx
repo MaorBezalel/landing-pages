@@ -7,6 +7,7 @@ const HomePage = lazy(() => import('@/pages/home/Home.page'));
 const SunnysidePage = lazy(() => import('@/pages/sunnyside/Sunnyside.page'));
 const LoopstudiosPage = lazy(() => import('@/pages/loopstudios/Loopstudios.page'));
 const BlogrPage = lazy(() => import('@/pages/blogr/Blogr.page'));
+const HuddlePage = lazy(() => import('@/pages/huddle/Huddle.page'));
 
 // prettier-ignore
 export function App() {
@@ -18,6 +19,7 @@ export function App() {
                     <Route path={ROUTES.SUNNYSIDE} element={<SunnysidePage />} />
                     <Route path={ROUTES.LOOPSTUDIOS} element={<LoopstudiosPage />} />
                     <Route path={ROUTES.BLOGR} element={<BlogrPage />} />
+                    <Route path={ROUTES.HUDDLE} element={<HuddlePage />} />
                 </Routes>
             </Suspense>
         </Router>

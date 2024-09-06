@@ -3,6 +3,7 @@ export const ROUTES = {
     SUNNYSIDE: '/sunnyside',
     LOOPSTUDIOS: '/loopstudios',
     BLOGR: '/blogr',
+    HUDDLE: '/huddle',
 } as const;
 
 export const LANDING_PAGES = [
@@ -19,6 +20,11 @@ export const LANDING_PAGES = [
     {
         name: 'Blogr',
         url: ROUTES.BLOGR,
+        className: 'text-2xl hover:text-blue-600',
+    },
+    {
+        name: 'Huddle',
+        url: ROUTES.HUDDLE,
         className: 'text-2xl hover:text-blue-600',
     },
     {

@@ -54,6 +54,12 @@ export default {
                     'very-dark-grayish-blue': 'hsl(207, 13%, 34%)', // body copy
                     'very-dark-black-blue': 'hsl(240, 10%, 16%)', // footer background
                 },
+                huddle: {
+                    pink: 'hsl(322, 100%, 66%)',
+                    'very-pale-cyan': 'hsl(193, 100%, 96%)',
+                    'very-dark-cyan': 'hsl(192, 100%, 9%)',
+                    'grayish-blue': 'hsl(208, 11%, 55%)',
+                },
             },
             backgroundImage: {
                 /* ----------------------------------------------- Blogr ----------------------------------------------- */
@@ -68,6 +74,7 @@ export default {
                     "url('@/assets/blogr/images/bg-pattern-intro-mobile.svg'), linear-gradient(to right, hsl(13, 100%, 72%), hsl(353, 100%, 62%))",
                 'blogr-image-pattern-services-cta':
                     'url(@/assets/blogr/images/bg-pattern-circles.svg), linear-gradient(135deg, hsl(237, 17%, 21%), hsl(237, 23%, 32%))',
+                /* -------------------------------------------------------------------------------------------------------- */
             },
             fontFamily: {
                 /* Sunnyside Fonts */
@@ -81,6 +88,10 @@ export default {
                 /* Blogr Fonts */
                 overpass: ['Overpass', 'sans-serif'],
                 ubuntu: ['Ubuntu', 'sans-serif'],
+
+                /* Huddle Fonts */
+                poppins: ['Poppins', 'sans-serif'],
+                'open-sans': ['Open Sans', 'sans-serif'],
             },
         },
         screens: {
