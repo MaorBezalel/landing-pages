@@ -8,7 +8,7 @@ type LogoProps = {
 export function Logo({ containerClassName, link, ...props }: LogoProps) {
     return (
         <Link
-            className="inline-block w-fit"
+            className={containerClassName ?? 'inline-block w-fit'}
             to={link ?? '/'}
         >
             <img {...props} />
