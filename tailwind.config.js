@@ -55,6 +55,7 @@ export default {
                     'very-dark-black-blue': 'hsl(240, 10%, 16%)', // footer background
                 },
                 huddle: {
+                    white: 'hsl(0, 0%, 100%)',
                     pink: 'hsl(322, 100%, 66%)',
                     'very-pale-cyan': 'hsl(193, 100%, 96%)',
                     'very-dark-cyan': 'hsl(192, 100%, 9%)',
@@ -75,6 +76,13 @@ export default {
                 'blogr-image-pattern-services-cta':
                     'url(@/assets/blogr/images/bg-pattern-circles.svg), linear-gradient(135deg, hsl(237, 17%, 21%), hsl(237, 23%, 32%))',
                 /* -------------------------------------------------------------------------------------------------------- */
+
+                /* ----------------------------------------------- Huddle ----------------------------------------------- */
+                /* Gradients (none) */
+
+                /* Images */
+                'huddle-image-hero-desktop': "url('@/assets/huddle/images/bg-hero-desktop.svg')",
+                'huddle-image-hero-mobile': "url('@/assets/huddle/images/bg-hero-mobile.svg')",
             },
             fontFamily: {
                 /* Sunnyside Fonts */
