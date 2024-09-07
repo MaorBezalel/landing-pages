@@ -5,3 +5,5 @@ export { Main } from '@/pages/huddle/layouts/Main.layout';
 export { GrowTogetherCard } from '@/pages/huddle/layouts/GrowTogetherCard.layout';
 export { FlowingConversationsCard } from '@/pages/huddle/layouts/FlowingConversationsCard.layout';
 export { YourUsersCard } from '@/pages/huddle/layouts/YourUsersCard.layout';
+export { Footer } from '@/pages/huddle/layouts/Footer.layout';
+export { SecondaryNavigation } from '@/pages/huddle/layouts/SecondaryNavigation.layout';

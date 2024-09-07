@@ -13,6 +13,10 @@
     svg {
         @apply pointer-events-none;
     }
+
+    address {
+        @apply not-italic;
+    }
     /* --------------------------------------------------------- */
 
     /* ----------------------Sunnyside Project---------------------- */
