@@ -12,7 +12,7 @@ export function ContentCard({ layout, title, description, imageSrc, imageAlt }: 
 
     return (
         <article
-            className={`flex h-full w-full items-center gap-60 rounded-3xl py-10 pe-16 ps-40 shadow-[1px_25px_50px_20px_rgba(0,0,0,0.1)] ${largeScreenLayout}
+            className={`flex h-full w-full items-center gap-60 rounded-3xl py-10 pe-16 ps-40 shadow-[2px_2px_20px_-7px_rgba(0,0,0,0.3)] ${largeScreenLayout}
             desktop-lg:gap-40 desktop-lg:ps-32
             desktop-md:gap-32 desktop-sm:gap-20
             desktop-sm:ps-16 
