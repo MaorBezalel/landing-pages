@@ -12,7 +12,7 @@ import {
     Footer,
     SecondaryNavigation,
 } from '@/pages/huddle/layouts';
-import { ContactInfo, SocialMedia } from '@/pages/huddle/components/ui';
+import { Cta, ContactInfo, SocialMedia } from '@/pages/huddle/components/ui';
 
 import logoFooterSrc from '@/assets/huddle/images/logo-footer.svg';
 import { Logo } from '@/components/ui';
@@ -32,6 +32,7 @@ export default function HuddlePage() {
                 <GrowTogetherCard />
                 <FlowingConversationsCard />
                 <YourUsersCard />
+                <Cta />
             </Main>
 
             <Footer>

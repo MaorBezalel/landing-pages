@@ -2,7 +2,7 @@ import { PropsWithChildren } from 'react';
 
 export function Footer({ children }: PropsWithChildren) {
     return (
-        <footer className="w-full bg-huddle-very-dark-cyan py-32">
+        <footer className="w-full bg-huddle-very-dark-cyan pb-20 pt-40">
             <div
                 role="presentation"
                 className="container grid grid-cols-[repeat(4,auto)] grid-rows-[auto_auto_auto] items-baseline justify-start gap-x-52 gap-y-10
